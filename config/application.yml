@@ -1,0 +1,23 @@
+#SERVER
+server:
+  port: 8080
+
+#SPRING
+spring:
+  http:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+    multipart:
+      maxFileSize: 3Mb
+      maxRequestSize: 3Mb
+  session:
+    store-type: none
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8600/eureka/
